@@ -52,7 +52,7 @@ nav li a {
 }
 
 nav li a:hover {
-     color: var(--contrast-color-2);
+     color: var(--contrast-color-1);
 }
 
 ul {     
@@ -123,6 +123,21 @@ footer div nav {
      padding-bottom: 0;
 }
 
+footer nav li a:hover {
+     color: var(--contrast-color-2);
+}
+
+@media (1024px < width)  {
+	footer div nav {
+		display: block;
+	}
+}
+.bigger {
+     font-size: 1.15em;
+}
+.x-small{
+	font-size: x-small;
+}
 
 form {
      width: 90%;
