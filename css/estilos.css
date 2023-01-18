@@ -1,4 +1,4 @@
-/* Estilos */
+/*** Estilos comunes***/
 :root {
      --text-color: rgb(93, 95, 121);
      --text-color-bg-dark: rgb(255, 255, 255);
@@ -7,18 +7,42 @@
      --bg-dark-color: rgb(0,0,0); 
      --bg-grey-color: rgb(227, 228, 230);
 }
-/* Common */
+
 * {
      font-family: 'Inter', sans-serif;
      box-sizing: border-box;
 }
 
-img,
-object {
+img {
      max-width: 100%;
 }
 
-/*** Contenedores del sitio ***/
+a, abbr {
+     color: inherit;
+     text-decoration: none;
+}
+
+h2, h3 {
+     text-align: center;
+     color:var(--bg-dark-color);
+     font-weight: 800;
+}
+
+h2{
+     padding-top: 3%;
+     font-size: 2.5em;
+}
+
+h3 {
+     font-size: 1.75em;
+}
+
+h4 {
+     margin-block-end: 0;
+     margin-block-start: 0;
+}
+
+/*** Heading and footer ***/
 .heading {
      height: auto;
      margin: auto;
@@ -65,7 +89,6 @@ ul {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding-bottom: 5%;
      }
      nav ul {
           justify-content: right;
@@ -105,6 +128,10 @@ h1.banner {
      content:"";
 }
 
+body {
+     margin:0;
+}
+
 footer {
      padding-top: 15px;
      padding-bottom: 3rem;
@@ -132,9 +159,12 @@ footer nav li a:hover {
 		display: block;
 	}
 }
+
 .bigger {
      font-size: 1.15em;
+     margin: 5px 0px;
 }
+
 .x-small{
 	font-size: x-small;
 }
@@ -178,14 +208,13 @@ main {
      max-width: 1040px;
 }
 
-main#home {
-     max-width: 1903px;
-}
+ /*** Contenedores ***/
 .container-home {
      display: flex;
      flex-wrap: wrap;
      text-align: center;
 }
+
 .container-home div {
      flex-basis: 100%;
 }
@@ -203,7 +232,9 @@ main#home {
           font-size: 0.9em;
      }
      h2 {
-          font-size: smaller;
+          font-size: 2em;
+     }
+     .orange h2 {
           text-align: left;
      }
      .container-home figure{
@@ -219,37 +250,13 @@ main#home {
           display: inline;
      }
 }
-/*** Common ***/
-a {
-     color: inherit;
-     text-decoration: none;
-}
 
-h2, h3 {
-     text-align: center;
-     color:var(--bg-dark-color);
-     font-weight: 800;
-}
-
-h2{
-     padding-top: 3%;
-     font-size: 3em;
-}
-h3 {
-     font-size: 1.75em;
-}
-h4 {
-     margin-block-end: 0;
-     margin-block-start: 0;
-}
- 
- /*** Contenedores ***/
- .container {
+.container {
      margin-right: auto;
      margin-left: auto;
      width: 100%;
      height: auto;
- }
+}
 
 .grid-container{
      display: grid;
@@ -278,7 +285,7 @@ h4 {
      text-align: left;
 }
 
-.orange p {
+.orange p, h2 {
      margin: 3% 3%;
 }
 
@@ -431,9 +438,6 @@ figure p {
      color: var(--contrast-color-1);
 }
 
-.bigger {
-     font-size: 1.3em;
-}
  /*** 11 de febrero page ***/
 
 .fuente {
@@ -499,7 +503,7 @@ dd {
 }
 
 dt::before {
-     content: "▄"; /* Insert content that looks like bullets */
+     content: "▄";
      color: var(--contrast-color-1);
      font-size: 1rem;
      font-weight: 800;
